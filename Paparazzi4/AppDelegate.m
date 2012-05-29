@@ -7,24 +7,43 @@
 //
 
 #import "AppDelegate.h"
+#import "FlickrFetcher.h"
+#import "PersonListViewController.h"
+#import "RecentsViewController.h"
+#import "MapViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
 
-- (void)dealloc
-{
-    [_window release];
-    [super dealloc];
-}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    tabBarController = [[UITabBarController alloc] init];
+    tabBarController.delegate = self;
+    personListViewController = [[PersonListViewController alloc] initWithStyle:UITableViewStylePlain];
+    personListViewController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemContacts tag:0];
+    recentsViewController = [[RecentsViewController alloc] initWithStyle:UITableViewStylePlain];
+    recentsViewController.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemRecents tag:1];
+    mapViewController = [[MapViewController alloc] init];
+    mapViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Map" image:[UIImage imageNamed:@"globe.png"] tag:2];
+    recentsViewController.mapViewController = mapViewController;
+    
+    navContactsController = [[UINavigationController alloc] initWithRootViewController:personListViewController];
+    navRecentsController = [[UINavigationController alloc] initWithRootViewController:recentsViewController];
+    navMapController = [[UINavigationController alloc] initWithRootViewController:mapViewController];
+    
+    tabBarController.viewControllers = [NSArray arrayWithObjects:navContactsController, navRecentsController, navMapController, nil];
+    
+    self.window.rootViewController = tabBarController;
+    
     return YES;
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

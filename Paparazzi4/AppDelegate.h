@@ -8,7 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@class FlickrFetcher, PersonListViewController, RecentsViewController, MapViewController;
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UITabBarControllerDelegate>
+{
+    UITabBarController *tabBarController;
+    UINavigationController *navContactsController;
+    UINavigationController *navRecentsController;
+    UINavigationController *navMapController;
+    FlickrFetcher *flickrFetcher;
+    NSManagedObjectContext *managedObjectContext;
+    PersonListViewController *personListViewController;
+    RecentsViewController *recentsViewController;
+    MapViewController *mapViewController;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		137DB8E515132CAA007277B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137DB8E415132CAA007277B4 /* UIKit.framework */; };
+		137DB8E715132CAA007277B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137DB8E615132CAA007277B4 /* Foundation.framework */; };
+		137DB8E915132CAA007277B4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137DB8E815132CAA007277B4 /* CoreGraphics.framework */; };
+		137DB8EF15132CAA007277B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 137DB8ED15132CAA007277B4 /* InfoPlist.strings */; };
+		137DB8F115132CAA007277B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB8F015132CAA007277B4 /* main.m */; };
+		137DB8F515132CAA007277B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB8F415132CAA007277B4 /* AppDelegate.m */; };
+		137DB8FC15132CBC007277B4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137DB8FB15132CBC007277B4 /* CoreData.framework */; };
+		137DB8FE15132CC7007277B4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137DB8FD15132CC7007277B4 /* CoreFoundation.framework */; };
+		137DB90115132CE7007277B4 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137DB8FF15132CE7007277B4 /* AddressBook.framework */; };
+		137DB90215132CE7007277B4 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137DB90015132CE7007277B4 /* AddressBookUI.framework */; };
+		137DB90415132CFC007277B4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137DB90315132CFC007277B4 /* MapKit.framework */; };
+		137DB9531513318A007277B4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 137DB9511513318A007277B4 /* Model.xcdatamodeld */; };
+		137DB956151332CF007277B4 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB955151332CF007277B4 /* Photo.m */; };
+		137DB959151332D0007277B4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB958151332D0007277B4 /* Person.m */; };
+		137DB95C15133310007277B4 /* ImageToDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB95B15133310007277B4 /* ImageToDataTransformer.m */; };
+		137DB96D1513336D007277B4 /* ContactAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB95E1513336B007277B4 /* ContactAddViewController.m */; };
+		137DB96E1513336D007277B4 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB9601513336B007277B4 /* MapViewController.m */; };
+		137DB96F1513336D007277B4 /* PersonAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB9621513336C007277B4 /* PersonAddViewController.m */; };
+		137DB9701513336D007277B4 /* PersonListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB9641513336C007277B4 /* PersonListViewController.m */; };
+		137DB9711513336D007277B4 /* PhotoAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB9661513336C007277B4 /* PhotoAnnotation.m */; };
+		137DB9721513336D007277B4 /* PhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB9681513336C007277B4 /* PhotoDetailViewController.m */; };
+		137DB9731513336D007277B4 /* PhotoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB96A1513336D007277B4 /* PhotoListViewController.m */; };
+		137DB9741513336D007277B4 /* RecentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB96C1513336D007277B4 /* RecentsViewController.m */; };
+		137DB98915133393007277B4 /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB97915133392007277B4 /* FlickrFetcher.m */; };
+		137DB98A15133393007277B4 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB97D15133392007277B4 /* NSObject+SBJSON.m */; };
+		137DB98B15133393007277B4 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB97F15133392007277B4 /* NSString+SBJSON.m */; };
+		137DB98C15133393007277B4 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB98115133392007277B4 /* SBJSON.m */; };
+		137DB98D15133393007277B4 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB98315133392007277B4 /* SBJsonBase.m */; };
+		137DB98E15133393007277B4 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB98515133392007277B4 /* SBJsonParser.m */; };
+		137DB98F15133393007277B4 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB98715133392007277B4 /* SBJsonWriter.m */; };
+		137DB99015133393007277B4 /* globe.png in Resources */ = {isa = PBXBuildFile; fileRef = 137DB98815133392007277B4 /* globe.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		137DB8E015132CAA007277B4 /* Paparazzi_4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Paparazzi_4.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		137DB8E415132CAA007277B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		137DB8E615132CAA007277B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		137DB8E815132CAA007277B4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		137DB8EC15132CAA007277B4 /* Paparazzi_4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Paparazzi_4-Info.plist"; sourceTree = "<group>"; };
+		137DB8EE15132CAA007277B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		137DB8F015132CAA007277B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		137DB8F215132CAA007277B4 /* Paparazzi_4-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Paparazzi_4-Prefix.pch"; sourceTree = "<group>"; };
+		137DB8F315132CAA007277B4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		137DB8F415132CAA007277B4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		137DB8FB15132CBC007277B4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		137DB8FD15132CC7007277B4 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		137DB8FF15132CE7007277B4 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		137DB90015132CE7007277B4 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		137DB90315132CFC007277B4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		137DB9521513318A007277B4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		137DB954151332CF007277B4 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		137DB955151332CF007277B4 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		137DB957151332D0007277B4 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		137DB958151332D0007277B4 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		137DB95A15133310007277B4 /* ImageToDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageToDataTransformer.h; sourceTree = "<group>"; };
+		137DB95B15133310007277B4 /* ImageToDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageToDataTransformer.m; sourceTree = "<group>"; };
+		137DB95D1513336B007277B4 /* ContactAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactAddViewController.h; sourceTree = "<group>"; };
+		137DB95E1513336B007277B4 /* ContactAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactAddViewController.m; sourceTree = "<group>"; };
+		137DB95F1513336B007277B4 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		137DB9601513336B007277B4 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		137DB9611513336B007277B4 /* PersonAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonAddViewController.h; sourceTree = "<group>"; };
+		137DB9621513336C007277B4 /* PersonAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonAddViewController.m; sourceTree = "<group>"; };
+		137DB9631513336C007277B4 /* PersonListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonListViewController.h; sourceTree = "<group>"; };
+		137DB9641513336C007277B4 /* PersonListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonListViewController.m; sourceTree = "<group>"; };
+		137DB9651513336C007277B4 /* PhotoAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoAnnotation.h; sourceTree = "<group>"; };
+		137DB9661513336C007277B4 /* PhotoAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoAnnotation.m; sourceTree = "<group>"; };
+		137DB9671513336C007277B4 /* PhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoDetailViewController.h; sourceTree = "<group>"; };
+		137DB9681513336C007277B4 /* PhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoDetailViewController.m; sourceTree = "<group>"; };
+		137DB9691513336C007277B4 /* PhotoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoListViewController.h; sourceTree = "<group>"; };
+		137DB96A1513336D007277B4 /* PhotoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoListViewController.m; sourceTree = "<group>"; };
+		137DB96B1513336D007277B4 /* RecentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentsViewController.h; sourceTree = "<group>"; };
+		137DB96C1513336D007277B4 /* RecentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentsViewController.m; sourceTree = "<group>"; };
+		137DB97715133392007277B4 /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		137DB97815133392007277B4 /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		137DB97915133392007277B4 /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		137DB97B15133392007277B4 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		137DB97C15133392007277B4 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		137DB97D15133392007277B4 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		137DB97E15133392007277B4 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		137DB97F15133392007277B4 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		137DB98015133392007277B4 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		137DB98115133392007277B4 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		137DB98215133392007277B4 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		137DB98315133392007277B4 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		137DB98415133392007277B4 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		137DB98515133392007277B4 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		137DB98615133392007277B4 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		137DB98715133392007277B4 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		137DB98815133392007277B4 /* globe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		137DB8DD15132CAA007277B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				137DB90415132CFC007277B4 /* MapKit.framework in Frameworks */,
+				137DB90115132CE7007277B4 /* AddressBook.framework in Frameworks */,
+				137DB90215132CE7007277B4 /* AddressBookUI.framework in Frameworks */,
+				137DB8FE15132CC7007277B4 /* CoreFoundation.framework in Frameworks */,
+				137DB8FC15132CBC007277B4 /* CoreData.framework in Frameworks */,
+				137DB8E515132CAA007277B4 /* UIKit.framework in Frameworks */,
+				137DB8E715132CAA007277B4 /* Foundation.framework in Frameworks */,
+				137DB8E915132CAA007277B4 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		137DB8D515132CAA007277B4 = {
+			isa = PBXGroup;
+			children = (
+				137DB8EA15132CAA007277B4 /* Paparazzi_4 */,
+				137DB8E315132CAA007277B4 /* Frameworks */,
+				137DB8E115132CAA007277B4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		137DB8E115132CAA007277B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				137DB8E015132CAA007277B4 /* Paparazzi_4.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		137DB8E315132CAA007277B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				137DB90315132CFC007277B4 /* MapKit.framework */,
+				137DB8FF15132CE7007277B4 /* AddressBook.framework */,
+				137DB90015132CE7007277B4 /* AddressBookUI.framework */,
+				137DB8FD15132CC7007277B4 /* CoreFoundation.framework */,
+				137DB8FB15132CBC007277B4 /* CoreData.framework */,
+				137DB8E415132CAA007277B4 /* UIKit.framework */,
+				137DB8E615132CAA007277B4 /* Foundation.framework */,
+				137DB8E815132CAA007277B4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		137DB8EA15132CAA007277B4 /* Paparazzi_4 */ = {
+			isa = PBXGroup;
+			children = (
+				137DB97515133392007277B4 /* Paparazzi3Files */,
+				137DB8F315132CAA007277B4 /* AppDelegate.h */,
+				137DB8F415132CAA007277B4 /* AppDelegate.m */,
+				137DB9511513318A007277B4 /* Model.xcdatamodeld */,
+				137DB8EB15132CAA007277B4 /* Supporting Files */,
+				137DB9631513336C007277B4 /* PersonListViewController.h */,
+				137DB9641513336C007277B4 /* PersonListViewController.m */,
+				137DB95D1513336B007277B4 /* ContactAddViewController.h */,
+				137DB95E1513336B007277B4 /* ContactAddViewController.m */,
+				137DB9611513336B007277B4 /* PersonAddViewController.h */,
+				137DB9621513336C007277B4 /* PersonAddViewController.m */,
+				137DB9691513336C007277B4 /* PhotoListViewController.h */,
+				137DB96A1513336D007277B4 /* PhotoListViewController.m */,
+				137DB96B1513336D007277B4 /* RecentsViewController.h */,
+				137DB96C1513336D007277B4 /* RecentsViewController.m */,
+				137DB95F1513336B007277B4 /* MapViewController.h */,
+				137DB9601513336B007277B4 /* MapViewController.m */,
+				137DB9671513336C007277B4 /* PhotoDetailViewController.h */,
+				137DB9681513336C007277B4 /* PhotoDetailViewController.m */,
+				137DB9651513336C007277B4 /* PhotoAnnotation.h */,
+				137DB9661513336C007277B4 /* PhotoAnnotation.m */,
+				137DB957151332D0007277B4 /* Person.h */,
+				137DB958151332D0007277B4 /* Person.m */,
+				137DB954151332CF007277B4 /* Photo.h */,
+				137DB955151332CF007277B4 /* Photo.m */,
+				137DB95A15133310007277B4 /* ImageToDataTransformer.h */,
+				137DB95B15133310007277B4 /* ImageToDataTransformer.m */,
+			);
+			name = Paparazzi_4;
+			path = Paparazzi4;
+			sourceTree = "<group>";
+		};
+		137DB8EB15132CAA007277B4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				137DB8EC15132CAA007277B4 /* Paparazzi_4-Info.plist */,
+				137DB8ED15132CAA007277B4 /* InfoPlist.strings */,
+				137DB8F015132CAA007277B4 /* main.m */,
+				137DB8F215132CAA007277B4 /* Paparazzi_4-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		137DB97515133392007277B4 /* Paparazzi3Files */ = {
+			isa = PBXGroup;
+			children = (
+				137DB97615133392007277B4 /* FlickrFetcher */,
+				137DB98815133392007277B4 /* globe.png */,
+			);
+			path = Paparazzi3Files;
+			sourceTree = "<group>";
+		};
+		137DB97615133392007277B4 /* FlickrFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				137DB97715133392007277B4 /* FlickrAPIKey.h */,
+				137DB97815133392007277B4 /* FlickrFetcher.h */,
+				137DB97915133392007277B4 /* FlickrFetcher.m */,
+				137DB97A15133392007277B4 /* JSON */,
+			);
+			path = FlickrFetcher;
+			sourceTree = "<group>";
+		};
+		137DB97A15133392007277B4 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				137DB97B15133392007277B4 /* JSON.h */,
+				137DB97C15133392007277B4 /* NSObject+SBJSON.h */,
+				137DB97D15133392007277B4 /* NSObject+SBJSON.m */,
+				137DB97E15133392007277B4 /* NSString+SBJSON.h */,
+				137DB97F15133392007277B4 /* NSString+SBJSON.m */,
+				137DB98015133392007277B4 /* SBJSON.h */,
+				137DB98115133392007277B4 /* SBJSON.m */,
+				137DB98215133392007277B4 /* SBJsonBase.h */,
+				137DB98315133392007277B4 /* SBJsonBase.m */,
+				137DB98415133392007277B4 /* SBJsonParser.h */,
+				137DB98515133392007277B4 /* SBJsonParser.m */,
+				137DB98615133392007277B4 /* SBJsonWriter.h */,
+				137DB98715133392007277B4 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		137DB8DF15132CAA007277B4 /* Paparazzi_4 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 137DB8F815132CAA007277B4 /* Build configuration list for PBXNativeTarget "Paparazzi_4" */;
+			buildPhases = (
+				137DB8DC15132CAA007277B4 /* Sources */,
+				137DB8DD15132CAA007277B4 /* Frameworks */,
+				137DB8DE15132CAA007277B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Paparazzi_4;
+			productName = Paparazzi4;
+			productReference = 137DB8E015132CAA007277B4 /* Paparazzi_4.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		137DB8D715132CAA007277B4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 137DB8DA15132CAA007277B4 /* Build configuration list for PBXProject "Paparazzi_4" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 137DB8D515132CAA007277B4;
+			productRefGroup = 137DB8E115132CAA007277B4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				137DB8DF15132CAA007277B4 /* Paparazzi_4 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		137DB8DE15132CAA007277B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				137DB8EF15132CAA007277B4 /* InfoPlist.strings in Resources */,
+				137DB99015133393007277B4 /* globe.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		137DB8DC15132CAA007277B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				137DB8F115132CAA007277B4 /* main.m in Sources */,
+				137DB8F515132CAA007277B4 /* AppDelegate.m in Sources */,
+				137DB9531513318A007277B4 /* Model.xcdatamodeld in Sources */,
+				137DB956151332CF007277B4 /* Photo.m in Sources */,
+				137DB959151332D0007277B4 /* Person.m in Sources */,
+				137DB95C15133310007277B4 /* ImageToDataTransformer.m in Sources */,
+				137DB96D1513336D007277B4 /* ContactAddViewController.m in Sources */,
+				137DB96E1513336D007277B4 /* MapViewController.m in Sources */,
+				137DB96F1513336D007277B4 /* PersonAddViewController.m in Sources */,
+				137DB9701513336D007277B4 /* PersonListViewController.m in Sources */,
+				137DB9711513336D007277B4 /* PhotoAnnotation.m in Sources */,
+				137DB9721513336D007277B4 /* PhotoDetailViewController.m in Sources */,
+				137DB9731513336D007277B4 /* PhotoListViewController.m in Sources */,
+				137DB9741513336D007277B4 /* RecentsViewController.m in Sources */,
+				137DB98915133393007277B4 /* FlickrFetcher.m in Sources */,
+				137DB98A15133393007277B4 /* NSObject+SBJSON.m in Sources */,
+				137DB98B15133393007277B4 /* NSString+SBJSON.m in Sources */,
+				137DB98C15133393007277B4 /* SBJSON.m in Sources */,
+				137DB98D15133393007277B4 /* SBJsonBase.m in Sources */,
+				137DB98E15133393007277B4 /* SBJsonParser.m in Sources */,
+				137DB98F15133393007277B4 /* SBJsonWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		137DB8ED15132CAA007277B4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				137DB8EE15132CAA007277B4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		137DB8F615132CAA007277B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		137DB8F715132CAA007277B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		137DB8F915132CAA007277B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Paparazzi4/Paparazzi_4-Prefix.pch";
+				INFOPLIST_FILE = "Paparazzi4/Paparazzi_4-Info.plist";
+				PRODUCT_NAME = Paparazzi_4;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		137DB8FA15132CAA007277B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Paparazzi4/Paparazzi_4-Prefix.pch";
+				INFOPLIST_FILE = "Paparazzi4/Paparazzi_4-Info.plist";
+				PRODUCT_NAME = Paparazzi_4;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		137DB8DA15132CAA007277B4 /* Build configuration list for PBXProject "Paparazzi_4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				137DB8F615132CAA007277B4 /* Debug */,
+				137DB8F715132CAA007277B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		137DB8F815132CAA007277B4 /* Build configuration list for PBXNativeTarget "Paparazzi_4" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				137DB8F915132CAA007277B4 /* Debug */,
+				137DB8FA15132CAA007277B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		137DB9511513318A007277B4 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				137DB9521513318A007277B4 /* Model.xcdatamodel */,
+			);
+			currentVersion = 137DB9521513318A007277B4 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 137DB8D715132CAA007277B4 /* Project object */;
+}
