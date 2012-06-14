@@ -38,6 +38,7 @@
 		137DB98E15133393007277B4 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB98515133392007277B4 /* SBJsonParser.m */; };
 		137DB98F15133393007277B4 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB98715133392007277B4 /* SBJsonWriter.m */; };
 		137DB99015133393007277B4 /* globe.png in Resources */ = {isa = PBXBuildFile; fileRef = 137DB98815133392007277B4 /* globe.png */; };
+		13A4962E1589E69800817050 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13A4962C1589E69800817050 /* CoreDataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		137DB98615133392007277B4 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		137DB98715133392007277B4 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		137DB98815133392007277B4 /* globe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe.png; sourceTree = "<group>"; };
+		13A4962D1589E69800817050 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				137DB8F315132CAA007277B4 /* AppDelegate.h */,
 				137DB8F415132CAA007277B4 /* AppDelegate.m */,
 				137DB9511513318A007277B4 /* Model.xcdatamodeld */,
+				13A4962C1589E69800817050 /* CoreDataModel.xcdatamodeld */,
 				137DB8EB15132CAA007277B4 /* Supporting Files */,
 				137DB9631513336C007277B4 /* PersonListViewController.h */,
 				137DB9641513336C007277B4 /* PersonListViewController.m */,
@@ -318,6 +321,7 @@
 				137DB98D15133393007277B4 /* SBJsonBase.m in Sources */,
 				137DB98E15133393007277B4 /* SBJsonParser.m in Sources */,
 				137DB98F15133393007277B4 /* SBJsonWriter.m in Sources */,
+				13A4962E1589E69800817050 /* CoreDataModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +439,16 @@
 			);
 			currentVersion = 137DB9521513318A007277B4 /* Model.xcdatamodel */;
 			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		13A4962C1589E69800817050 /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				13A4962D1589E69800817050 /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 13A4962D1589E69800817050 /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
