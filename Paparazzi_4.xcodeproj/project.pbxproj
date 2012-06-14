@@ -18,7 +18,6 @@
 		137DB90115132CE7007277B4 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137DB8FF15132CE7007277B4 /* AddressBook.framework */; };
 		137DB90215132CE7007277B4 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137DB90015132CE7007277B4 /* AddressBookUI.framework */; };
 		137DB90415132CFC007277B4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 137DB90315132CFC007277B4 /* MapKit.framework */; };
-		137DB9531513318A007277B4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 137DB9511513318A007277B4 /* Model.xcdatamodeld */; };
 		137DB956151332CF007277B4 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB955151332CF007277B4 /* Photo.m */; };
 		137DB959151332D0007277B4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB958151332D0007277B4 /* Person.m */; };
 		137DB95C15133310007277B4 /* ImageToDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 137DB95B15133310007277B4 /* ImageToDataTransformer.m */; };
@@ -57,7 +56,6 @@
 		137DB8FF15132CE7007277B4 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		137DB90015132CE7007277B4 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		137DB90315132CFC007277B4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		137DB9521513318A007277B4 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		137DB954151332CF007277B4 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
 		137DB955151332CF007277B4 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 		137DB957151332D0007277B4 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 				137DB97515133392007277B4 /* Paparazzi3Files */,
 				137DB8F315132CAA007277B4 /* AppDelegate.h */,
 				137DB8F415132CAA007277B4 /* AppDelegate.m */,
-				137DB9511513318A007277B4 /* Model.xcdatamodeld */,
 				13A4962C1589E69800817050 /* CoreDataModel.xcdatamodeld */,
 				137DB8EB15132CAA007277B4 /* Supporting Files */,
 				137DB9631513336C007277B4 /* PersonListViewController.h */,
@@ -302,7 +299,6 @@
 			files = (
 				137DB8F115132CAA007277B4 /* main.m in Sources */,
 				137DB8F515132CAA007277B4 /* AppDelegate.m in Sources */,
-				137DB9531513318A007277B4 /* Model.xcdatamodeld in Sources */,
 				137DB956151332CF007277B4 /* Photo.m in Sources */,
 				137DB959151332D0007277B4 /* Person.m in Sources */,
 				137DB95C15133310007277B4 /* ImageToDataTransformer.m in Sources */,
@@ -432,16 +428,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		137DB9511513318A007277B4 /* Model.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				137DB9521513318A007277B4 /* Model.xcdatamodel */,
-			);
-			currentVersion = 137DB9521513318A007277B4 /* Model.xcdatamodel */;
-			path = Model.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		13A4962C1589E69800817050 /* CoreDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
